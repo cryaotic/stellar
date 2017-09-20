@@ -9,8 +9,8 @@
 	src: url('Park Lane NF.ttf')format('trutype');
 }
 @font-face {
-	font-family: ACMountain;
-	src: url('ACMountain.otf')format('opentype');
+	font-family: plaza;
+	src: url('Plaza.ttf')format('trutype');
 }
 
 /*
@@ -1663,6 +1663,13 @@
 	color: inherit;
 }
 /* Type */
+%fix-fatty-fonts {
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, button, input, select, textarea { @extend %fix-fatty-fonts;}
 
 	body {
 		background-color: #935d8c;
@@ -1727,6 +1734,9 @@
 	}
 	header p{
 		font-family: century gothic;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 
 		p.content {
@@ -1763,7 +1773,10 @@
 		text-align: center;
     font-size: 3em;
 		text-transform: uppercase;
-		font-weight: 100;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
 	}
 
 	h2 {
@@ -2084,10 +2097,7 @@
 			.button.special.icon:before {
 				color: #ffffff !important;
 			}
-			footer .button{
-				margin-top: -.4em;
-				font-family: plaza;
-			}
+
 
 /* Form */
 
@@ -2509,8 +2519,9 @@
 			.image.main img {
 				width: 100%;
 			}
-			footer#footer ul.icons a.imglink{
-				text-decoration: none;
+			section#first img{
+				max-width: 500px;
+        height: 230px;
 			}
 
 /* List */
@@ -3276,8 +3287,11 @@
 		}
 
 /* Nav */
-nav *{
+nav *, .button{
 	font-family: plaza;
+	letter-spacing: .2em;
+	font-size: 1em;
+	font-weight: normal;
 }
 
 	#nav {
