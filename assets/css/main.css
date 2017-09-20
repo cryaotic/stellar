@@ -1,5 +1,17 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+@font-face {
+	font-family: arwen;
+	src: url('ARWEN.ttf')format('trutype');
+}
+@font-face {
+	font-family: Park Lane NF;
+	src: url('Park Lane NF.ttf')format('trutype');
+}
+@font-face {
+	font-family: ACMountain;
+	src: url('ACMountain.otf')format('opentype');
+}
 
 /*
 	Stellar by HTML5 UP
@@ -1640,7 +1652,16 @@
 			-ms-transition: none !important;
 			transition: none !important;
 		}
-
+/*Link*/
+.copyrightlink{
+	-moz-transition: color 0.1s ease, border-bottom 0.1s ease;
+	-webkit-transition: color 0.1s ease, border-bottom 0.1s ease;
+	-ms-transition: color 0.1s ease, border-bottom 0.1s ease;
+	transition: color 0.1s ease, border-bottom 0.1s ease;
+	text-decoration: none;
+	border-bottom: dotted 1px;
+	color: inherit;
+}
 /* Type */
 
 	body {
@@ -1685,7 +1706,7 @@
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		/*border-bottom: dotted 1px;*/
 		color: inherit;
 	}
 
@@ -1737,7 +1758,12 @@
 		line-height: 1.2;
 	}
 	header h1{
-		font-family: andes;
+		font-family: Park Lane NF;
+		letter-spacing: .5em;
+		text-align: center;
+    font-size: 3em;
+		text-transform: uppercase;
+		font-weight: 100;
 	}
 
 	h2 {
@@ -1817,6 +1843,9 @@
 	}
 	footer#footer hr{
 		margin-top: -.6em;
+	}
+	header#header hr{
+		margin-top: -.3em;
 	}
 
 		hr.major {
@@ -1909,8 +1938,8 @@
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
-		height: 2.75em;
-		line-height: 2.75em;
+		height: 2.2em;
+		line-height: 2.2em;
 		min-width: 9.25em;
 		padding: 0 1.5em;
 		text-align: center;
@@ -3118,8 +3147,10 @@
 		}
 
 		#header p {
-			font-size: 1.25em;
+			font-size: 1.15em;
 			letter-spacing: -0.025em;
+			margin-top: -.2em;
+			font-family: century gothic;
 		}
 
 		#header.alt {
@@ -3184,7 +3215,6 @@
 				}
 
 		}
-
 		@media screen and (max-width: 736px) {
 
 			#header {
@@ -3246,6 +3276,9 @@
 		}
 
 /* Nav */
+nav *{
+	font-family: plaza;
+}
 
 	#nav {
 		-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
@@ -3355,10 +3388,7 @@
 				#nav.alt ul li a {
 					font-size: 0.9em;
 				}
-				#nav ul li.intronav a:hover{
-					background-color: hsla(193, 40%, 76%, 0.7);
-					box-shadow: none;
-				}
+
 
 		@media screen and (max-width: 736px) {
 
@@ -3395,8 +3425,7 @@
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
 			color: #636363;
 		}
-
-		#main blockquote {
+	 	#main blockquote {
 			border-left-color: #dddddd;
 		}
 
@@ -3587,19 +3616,13 @@
 			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 		}
-		#main div.spotlight div.content header.major h2::first-letter{
-			font-family: andes;
+		header.major h2{
+			font-family: arwen;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			font-size: 2em;
 		}
-		#main div.spotlight div.content header.major h2:nth-of-type(2){
-			font-family: andes;
-		}
-		#main div.spotlight div.content header.major h2:nth-of-type(3)::first-letter{
-			font-family: andes;
-		}
-		#main div.spotlight div.content header.major h2{
-			font-family: plaza;
-			font-variant: small-caps;
-		}
+
 
 		#main table tbody tr {
 			border-color: #dddddd;
@@ -3754,6 +3777,12 @@
 			margin: 2.5em 0 2em 0;
 			font-size: 0.8em;
 			text-align: center;
+		}
+		#footer h2{
+			font-family: arwen;
+			text-transform: uppercase;
+			letter-spacing: .2em;
+			font-size: 1.2em;
 		}
 
 		@media screen and (max-width: 1280px) {
