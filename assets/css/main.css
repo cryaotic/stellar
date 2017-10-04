@@ -1669,6 +1669,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 html, body, button, input, select, textarea { @extend %fix-fatty-fonts;}
 
 	body {
